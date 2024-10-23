@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Raizal Community: Guardians of the Caribbean","children":[{"content":"Demographic and Geographic Information","children":[{"content":"Archipelago of San Andrés, Providencia, and Santa Catalina","children":[{"content":"Caribbean Sea","children":[],"payload":{"lines":"4,5"}},{"content":"Population: 30,000","children":[],"payload":{"lines":"5,6"}},{"content":"Tropical weather","children":[],"payload":{"lines":"6,9"}}],"payload":{"lines":"3,9"}}],"payload":{"lines":"1,2"}},{"content":"Language","children":[{"content":"Creole English","children":[{"content":"Mix of English, Spanish, and African languages","children":[],"payload":{"lines":"12,13"}}],"payload":{"lines":"11,13"}},{"content":"Spanish","children":[{"content":"Official language of Colombia","children":[],"payload":{"lines":"14,16"}}],"payload":{"lines":"13,16"}}],"payload":{"lines":"9,10"}},{"content":"Food","children":[{"content":"\n<p data-lines=\"18,19\">Seafood</p>","children":[{"content":"Fish","children":[],"payload":{"lines":"21,22"}},{"content":"Lobster","children":[],"payload":{"lines":"22,23"}},{"content":"Crab","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"18,25"}},{"content":"\n<p data-lines=\"25,26\">Popular dish: Rondón</p>","children":[{"content":"Fish, coconut milk, and plantains","children":[],"payload":{"lines":"26,27"}}],"payload":{"lines":"25,27"}},{"content":"\n<p data-lines=\"27,28\">Tropical fruits</p>","children":[{"content":"Mango, Guava","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"27,31"}}],"payload":{"lines":"16,17"}},{"content":"Clothing","children":[{"content":"Traditional Raizal clothing","children":[{"content":"Women: Colorful dresses with floral patterns","children":[],"payload":{"lines":"33,34"}},{"content":"Men: Light, comfortable clothes","children":[],"payload":{"lines":"34,35"}},{"content":"Special occasions: Bright traditional outfits","children":[],"payload":{"lines":"35,36"}}],"payload":{"lines":"32,36"}}],"payload":{"lines":"31,32"}},{"content":"Celebrations and Traditions","children":[{"content":"Christianity","children":[{"content":"Important celebrations: Christmas","children":[],"payload":{"lines":"38,39"}}],"payload":{"lines":"37,39"}},{"content":"Green Moon Festival","children":[{"content":"Caribbean heritage celebration","children":[],"payload":{"lines":"40,41"}},{"content":"Music, dancing, and food","children":[],"payload":{"lines":"41,42"}}],"payload":{"lines":"39,42"}},{"content":"Special dances","children":[{"content":"Quadrille","children":[],"payload":{"lines":"43,44"}}],"payload":{"lines":"42,44"}}],"payload":{"lines":"36,37"}},{"content":"Conclusion","children":[{"content":"Unique culture: Mix of African, Caribbean, and European traditions","children":[],"payload":{"lines":"45,46"}},{"content":"Important part of Colombia's diversity","children":[],"payload":{"lines":"46,47"}},{"content":"Need to preserve their heritage","children":[],"payload":{"lines":"47,48"}}],"payload":{"lines":"44,45"}}],"payload":{"lines":"0,1"}},{})</script>
+</body>
+</html>
